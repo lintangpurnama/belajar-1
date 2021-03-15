@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Route;
 // // Route::get('/', function () {
 // //     return view('welcome');git add
 // // });
-// Route:: view('disk/love', 'disk/love');
+// Route:: view('disk/love', 'disk/love'); 
 //URL               BLADE 
 
 Route::get('/', function () {
