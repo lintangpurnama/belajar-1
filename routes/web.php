@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 //URL               BLADE 
 
 Route::get('/', function () {
-    $name = "Lintang Purnama";
-    return view('welcome', ['name' => $name]);
+    return view('home');
 });
+
+Route::view('contact', 'contact');
+Route::view('about', 'about');
+Route::view('login', 'login');
