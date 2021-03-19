@@ -3,7 +3,7 @@
 @section('content')
 
    <div class="container">
-       Home!
+       My name is {{$name}} 
    </div>
 
 @endsection

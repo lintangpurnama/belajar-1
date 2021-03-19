@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 // Route:: view('/','welcome');
 
@@ -13,10 +14,7 @@ use Illuminate\Support\Facades\Route;
 // Route:: view('disk/love', 'disk/love'); 
 //URL               BLADE 
 
-Route::get('/', function () {
-    return view('home');
-});
-
+Route::get('/', [HomeController::class, 'index']);
 Route::view('contact', 'contact');
 Route::view('about', 'about');
 Route::view('login', 'login');
